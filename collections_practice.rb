@@ -28,9 +28,7 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  k = []
-  array.each {|n| k << n.sub!(n[2], "$") }
-  k
+  array.each { |item|  item[2] = "$" }
 end
 
 def find_a(array)
